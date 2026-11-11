@@ -4,7 +4,7 @@ okf_version: "0.2"
 
 # ext-miniaudio
 
-1:1 PHP bindings of miniaudio 0.11.26 (vendored, unchanged). Version 0.11.0. Linux, macOS. PHP 8.4 NTS + ZTS.
+1:1 PHP bindings of miniaudio 0.11.26 (vendored, unchanged). Version 0.11.1. Linux, macOS. PHP 8.4 NTS + ZTS.
 
 # API
 

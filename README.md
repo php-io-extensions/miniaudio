@@ -128,7 +128,7 @@ $ php --ri miniaudio
 miniaudio
 
 miniaudio support => enabled
-Version => 0.11.0
+Version => 0.11.1
 miniaudio version => 0.11.26
 miniaudio commit => 877ea4a7c2601c7b0f2a44e83dfac42e6470fea6
 ```

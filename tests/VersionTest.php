@@ -18,7 +18,7 @@ it('prints the extension version, the miniaudio version, and the upstream commit
     phpinfo(INFO_MODULES);
     $info = ob_get_clean();
 
-    expect($info)->toContain('0.11.0')
+    expect($info)->toContain('0.11.1')
         ->and($info)->toContain('0.11.26')
         ->and($info)->toContain('877ea4a7c2601c7b0f2a44e83dfac42e6470fea6');
 });

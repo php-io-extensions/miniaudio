@@ -9,4 +9,4 @@
 7. **Threads never enter PHP.** miniaudio's threads queue callbacks to the owning PHP thread and wait until served or a deadline passes (then the no-op result applies). The owner serves from `zend_interrupt_function` and while calls in `BLOCKING` (and every uninit) run on a helper thread. A thread-owning handle from before `fork()` is an `Error` in the child. Request end uninitializes every live handle, newest first.
 8. **Build.** `./install-macos.sh` into Homebrew `php@8.4` and `php@8.4-zts`. On the Pi, copy the tree with `fnk` (set `COPYFILE_DISABLE=1` on the Mac `tar` so no `._*` files reach gen_stub) and `./install-debian-trixie.sh`. Pest at `-d memory_limit=128M`, with `XDEBUG_MODE=off` for any timing. Tests use the null backend only; never open real audio hardware in a test. Gate a commit on the suite's exit code.
 9. **Durable facts go in `.okf`.** Update the matching concept and append `.okf/log.md`.
-10. **Version** is `PHP_MINIAUDIO_VERSION` in `php_miniaudio.h`: 0.11.0. `os-families`: linux, darwin.
+10. **Version** is `PHP_MINIAUDIO_VERSION` in `php_miniaudio.h`: 0.11.1. `os-families`: linux, darwin.
